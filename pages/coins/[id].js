@@ -1,13 +1,16 @@
 import styles from "../../styles/Home.module.css"
 import { useRouter } from "next/router"
 
-export default function Detail() {
+
+export default function Coin() {
     const route = useRouter()
-    const {id} = route.query
-    let text = `Detail ${id}`
+    const data = route.query
+    let text = `Coin ${data.id}`
+    console.log(data)
+
     return (
         <main className={styles.main}>
-            <h1>{text}</h1>
+            <h1>{data.name}</h1>
         </main>
     )
 }

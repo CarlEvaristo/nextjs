@@ -13,6 +13,6 @@ export default function Home() {
     </Head>
     <h1>Hello World</h1>
     <Link href="/about">About</Link>
-    <Link href="/detail/22">Detail 22</Link>
+    <Link href="/coins/22">Coin 22</Link>
   </main>
 }
