@@ -24,7 +24,8 @@ export default function CoinList({coins}) {
                       href={{
                           pathname: `/coins/${coin.symbol}`,
                           query: coin // the coin data
-                        }}>
+                        }}
+                      className={styles.listItem}>
                         <p>{coin.id} {coin.price.toFixed(2)}</p>
                     </Link>
                 </div>

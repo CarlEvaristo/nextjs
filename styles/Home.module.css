@@ -4,3 +4,10 @@
   align-items: center;
   min-height: 100vh;
 }
+.listItem {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.listItem:hover {
+  color:rgb(0, 0, 163)
+}
