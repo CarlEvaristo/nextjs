@@ -4,10 +4,19 @@
   align-items: center;
   min-height: 100vh;
 }
-.listItem {
+.link {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.listItem:hover {
-  color:rgb(0, 0, 163)
+.link:hover {
+  color:rgb(0, 0, 213)
+}
+.coinImg {
+  width:30px;
+  height:30px;
+  margin-right:5px;
+}
+.coin {
+  display: flex;
+  align-items: center;
 }

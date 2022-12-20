@@ -12,6 +12,6 @@ export default function Home() {
       <title>Carlos</title>
     </Head>
     <h1>Cryptocurrency Coins</h1>
-    <Link href="/coins">Go to all coins</Link>
+    <Link href="/coins" className={styles.link}>Go to all coins</Link>
   </main>
 }

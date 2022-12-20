@@ -19,13 +19,14 @@ export default function CoinList({coins}) {
         <main className={styles.main}>
             <h1>Coinlist</h1>
             {coins.coins.map((coin) => (
-                <div key={coin.id}>
+                <div key={coin.id} className={styles.coin}>
+                    <img src={coin.icon} alt={coin.name} className={styles.coinImg}/>
                     <Link
                       href={{
                           pathname: `/coins/${coin.symbol}`,
                           query: coin // the coin data
                         }}
-                      className={styles.listItem}>
+                      className={styles.link}>
                         <p>{coin.id} {coin.price.toFixed(2)}</p>
                     </Link>
                 </div>
