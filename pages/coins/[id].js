@@ -1,5 +1,6 @@
 import styles from "../../styles/Home.module.css"
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 export default function Coin() {
     const route = useRouter()
@@ -15,6 +16,7 @@ export default function Coin() {
                 <li>Total supply: {parseFloat(data.totalSupply)}</li>
                 <li>Volume: {parseFloat(data.volume).toFixed(2)}</li>
             </ul>
+            <Link href="/coins" className={styles.link}>Back to all coins</Link>
 
         </main>
     )
